@@ -2,40 +2,40 @@ let handler = async (m, { conn }) => {
 	//-----PRICE
 //sewa
 let sh = '5'
-let sn = '15'
-let ss = '30'
+let sn = '10'
+let ss = '20'
 let sp = '35'
-let sv = '65'
+let sv = '50'
 //premium
 let ph = '5'
-let pn = '20'
-let pp = '40'
-let pv = '50'
-let ppm = '70'
+let pn = '10'
+let pp = '20'
+let pv = '35'
+let ppm = '50'
 let info = `
 ╭━━━━「 *SEWA* 」
-┊⫹⫺ *Hemat:* _${sh}k/grup (1 minggu)_
-┊⫹⫺ *Normal:* _${sn}k/grup (1 bulan)_
-┊⫹⫺ *Standar:* _${ss}k/grup (2 bulan)_
-┊⫹⫺ *Pro:* _${sp}k/grup (4 bulan)_                                                      
-┊⫹⫺ *Vip:* = _${sv}k/grup (12 bulan)_
+┊⫹⫺ *HEMAT:* _${sh}k/grup (1 minggu)_
+┊⫹⫺ *NORMAL:* _${sn}k/grup (1 bulan)_
+┊⫹⫺ *STANDAR:* _${ss}k/grup (2 bulan)_
+┊⫹⫺ *PRO:* _${sp}k/grup (4 bulan)_                                                      
+┊⫹⫺ *VIP:* = _${sv}k/grup (12 bulan)_
 ╰═┅═━––––––๑
 
 ╭━━━━「 *PREMIUM* 」
-┊⫹⫺ *Hemat:* _${ph}k (1 minggu)_
-┊⫹⫺ *Normal:* _${pn}k (1 bulan)_
-┊⫹⫺ *Pro:* _${pp}k (4 bulan)_
-┊⫹⫺ *Vip:* _${pv}k (8 bulan)_                                               
-┊⫹⫺ *Permanent:* = _${ppm}k (Unlimited)_
+┊⫹⫺ *HEMAT:* _${ph}k (1 minggu)_
+┊⫹⫺ *NORMAL:* _${pn}k (1 bulan)_
+┊⫹⫺ *STANDAR:* _${pp}k (2 bulan)_
+┊⫹⫺ *PRO:* _${pv}k (4 bulan)_                                               
+┊⫹⫺ *VIP:* = _${ppm}k (12 bulan)_
 ╰═┅═━––––––๑
 
 *⫹⫺ PAYMENT:*
-• *Pulsa Telkomsel:* [${ppulsa}]
+• *Pulsa Axis:* [${ppulsa}]
 • *Dana:* [${pdana}]
 • *Gopay:* [${pgopay}]
 • *Ovo:* [${povo}]
 • *Link Aja:* [${plinkaja}]
-
+• *Qris:* https://telegra.ph/file/bca3997662f73de79c0ea.jpg
 –––––– *🐾 Kebijakan* ––––––
 🗣️: Kak, Kok harganya mahal banget?
 💬: Mau tawar menawar? boleh, silahkan chat owner aja
@@ -60,9 +60,9 @@ const sections = [
 	rows: [
 	    {title: "🌟 HEMAT", rowId: '.order *Paket:* HEMAT • Premium', description: 'PRICE: ' + ph + 'k (1 minggu)' },
 	    {title: "🌟 NORMAL", rowId: '.order *Paket:* NORMAL • Premium', description: 'PRICE: ' + pn + 'k (1 bulan)' },
-	{title: "🌟 PRO", rowId: '.order *Paket:* PRO • Premium', description: 'PRICE: ' + pp + 'k (4 bulan)' },
-	{title: "🌟 VIP", rowId: '.order *Paket:* VIP • Premium', description: 'PRICE: ' + pv + 'k (8 bulan)' },
-	{title: "🌟 PERMANENT", rowId: '.order *Paket:* PERMANENT • Premium', description: 'PRICE: ' + ppm + 'k (UNLIMITED)' },
+	{title: "🌟 STANDAR", rowId: '.order *Paket:* STANDAR • Premium', description: 'PRICE: ' + pp + 'k (2 bulan)' },
+	{title: "🌟 PRO", rowId: '.order *Paket:* PRO • Premium', description: 'PRICE: ' + pv + 'k (4 bulan)' },
+	{title: "🌟 VIP", rowId: '.order *Paket:* VIP • Premium', description: 'PRICE: ' + ppm + 'k (12 bulan)' },
 	]
     },
 ]
