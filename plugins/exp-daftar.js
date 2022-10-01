@@ -50,8 +50,8 @@ let handler = async function (m, { text, usedPrefix, command }) {
 
 const listMessage = {
   text: `│›Please select your age at the bottom button...`,
-  footer: `┗ *ʏᴏᴜʀ ɴᴀᴍᴇ:* ${conn.getName(m.sender)}\n<❔> Want a costume name? type *${usedPrefix + command} yourname.age*`,
-  title: "▢- - - - - ʀᴇɢɪsᴛᴇʀ - - - - -",
+  footer: `┗ *Your Name:* ${conn.getName(m.sender)}\n<❔> Want a costume name? type *${usedPrefix + command} yourname.age*`,
+  title: "▢- - - - - Register - - - - -",
   buttonText: "Click Here !",
   sections
 }
@@ -72,19 +72,19 @@ const listMessage = {
   let sn = createHash('md5').update(m.sender).digest('hex')
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : m.fromMe ? conn.user.jid : m.sender
   let cap = `
-┏─• *ᴜsᴇʀs*
-│▸ *sᴛᴀᴛᴜs:* ☑️ sᴜᴄᴄᴇssғᴜʟ
-│▸ *ɴᴀᴍᴇ:* ${name}
-│▸ *ᴀɢᴇ:* ${age} ʏᴇᴀʀs
-│▸ *sɴ:* ${sn}
+┏─• *Users*
+│▸ *Status:* ☑️ Successful
+│▸ *Name:* ${name}
+│▸ *Age:* ${age} Years
+│▸ *Sn:* ${sn}
 ┗────···
 
-ᴅᴀᴛᴀ ᴜsᴇʀ ʏᴀɴɢ ᴛᴇʀsɪᴍᴘᴀɴ ᴅɪᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ, ᴅɪᴊᴀᴍɪɴ ᴀᴍᴀɴ ᴛᴀɴᴘᴀ ᴛᴇʀsʜᴀʀᴇ (. ❛ ᴗ ❛.)
+Data Users Yang Tersimpan Didatabase Bot, Dijamin Aman Tanpa Tershare (. ❛ ᴗ ❛.)
 `
   let buttonMessage= {
 'document':{'url':sgc},
 'mimetype':global.ddocx,
-'fileName':'- - - - - ʀᴇɢɪsᴛᴇʀ - - - - -',
+'fileName':'- - - - - Register - - - - -',
 'fileLength':fsizedoc,
 'pageCount':fpagedoc,
 'contextInfo':{
