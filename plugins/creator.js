@@ -20,17 +20,17 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 //------------ BIO
 let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
 let teksbio = `${htki} *BIODATA* ${htka}
-${htjava} *💌 Nama* : WH-MODS-Dev
-${htjava} *✉️ Nama RL* : HAMBA ALLAH
-${htjava} *♂️ Gender* : Boys
+${htjava} *💌 Nama* : A7 RAFLI 
+${htjava} *✉️ Nama RL* : M.Rafli Setiawan 
+${htjava} *♂️ Gender* : Laki-laki
 ${htjava} *🕋 Agama* : Islam
-${htjava} *⏰ Tanggal lahir* : Private 🥶
-${htjava} *🎨 Umur* : 18
-${htjava} *🧮 Kelas* : SUDAH TAMAT
-${htjava} *🧩 Hobby* : MODIFIKASI WHATSAPP "MODDER WHATSAPP"
-${htjava} *💬 Sifat* : ASIK DAH KALAU DAH KENAL
-${htjava} *🗺️ Tinggal* : Indo, Depok, Jawa Barat
-${htjava} *❤️ Waifu* : -
+${htjava} *⏰ Tanggal lahir* : 14-07-2006
+${htjava} *🎨 Umur* : 16
+${htjava} *🧮 Kelas* : 11 SMA 
+${htjava} *🧩 Hobby* : Ngedit, Turu, Maen Hp, Ngerecode Sc, Nonton Hentai
+${htjava} *💬 Sifat* : Asik, Friendly, Agak Misterius, 
+${htjava} *🗺️ Tinggal* : Sukabumi, Jawa barat, Indonesia
+${htjava} *❤️ Waifu* : Nakano Miku, Hu Tao 
 
 ${htjava} *📷 ɪɴsᴛᴀɢʀᴀᴍ* : ${sig}
 ${htjava} *🐈 ɢɪᴛʜᴜʙ:* ${sgh}
