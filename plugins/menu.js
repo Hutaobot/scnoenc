@@ -276,21 +276,21 @@ let tek = `*${ucapan()} ${conn.getName(m.sender)}*
 ┊│❀  Terima Kasih Telah Menggunakan Bot Kami
 │└────────────┈ ⳹
 ┊   「 *U s e r  I n f o 克* 」
-┊↬✗• *ɴᴀᴍᴇ:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
-┊↬✗• *ᴛᴀɢs:* @${m.sender.split`@`[0]}
-┊↬✗• *sᴛᴀᴛᴜs:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
-┊↬✗• *ᴘʀᴇᴍɪᴜᴍ:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
+┊↬✗• *Name:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
+┊↬✗• *Tags:* @${m.sender.split`@`[0]}
+┊↬✗• *Status:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
+┊↬✗• *Premium:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
 ┗–––––––––––––––––✥
 ┌–––––––––––––––––✥
 ┊   「 *S t a t u s  I n f o 比* 」
-┊↬✗• *ᴜᴘᴛɪᴍᴇ:* ${mpt}
-┊↬✗• *ᴛɪᴍᴇ:* ${moment.tz('Asia/Jakarta').format('HH')} H  ${moment.tz('Asia/Jakarta').format('mm')} M  ${moment.tz('Asia/Jakarta').format('ss')} S
-┊↬✗• *ᴜsᴇʀs:* ${Object.keys(global.db.data.users).length}
-┊↬✗• *ʟɪᴍɪᴛ:* ${usrs.limit}
-┊↬✗• *ʟᴇᴠᴇʟ:* ${usrs.level}
-┊↬✗• *ʀᴏʟᴇ:* ${usrs.role}${usrs.premiumTime > 1 ? `
+┊↬✗• *Uptime:* ${mpt}
+┊↬✗• *Time:* ${moment.tz('Asia/Jakarta').format('HH')} H  ${moment.tz('Asia/Jakarta').format('mm')} M  ${moment.tz('Asia/Jakarta').format('ss')} S
+┊↬✗• *Users:* ${Object.keys(global.db.data.users).length}
+┊↬✗• *Limit:* ${usrs.limit}
+┊↬✗• *Level:* ${usrs.level}
+┊↬✗• *Role:* ${usrs.role}${usrs.premiumTime > 1 ? `
 ┗––––––––––––––––––✥
-┊↬✗• *ᴇxᴘɪʀᴇᴅ ᴘʀᴇᴍɪᴜᴍ:*
+┊↬✗• *Expired Premium:*
 ${clockStringP(usrs.premiumTime - new Date())}` : ''}
 `
 const listMessage = {
